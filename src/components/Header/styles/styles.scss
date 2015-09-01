@@ -1,0 +1,25 @@
+/* 
+  Header styles 
+*/
+:local(.styles) {
+	background-color: #A6E33C;
+	svg{
+		margin-left: 10px;
+		fill:#FFF;
+		width: 60px;
+		height: 46px;
+	}
+	svg:hover{
+		fill:#EEE;
+	}
+	.admin{
+		margin-top: 10px;
+		font-size: 12px;
+		.user{
+			font-size:16px;
+		}
+		.out{
+			margin-left: 10px;
+		}
+	}
+}
