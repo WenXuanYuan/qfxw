@@ -35,8 +35,8 @@ module.exports = {
 
   module: {
     loaders: [{
-      test: /bootstrap\/js\//,
-      loader: 'imports?jQuery=jquery'
+      test: /\.css$/,
+      loader: 'style-loader!css-loader'
     }, {
       test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
       loader: "url?limit=10000&minetype=application/font-woff"
