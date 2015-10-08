@@ -1,0 +1,17 @@
+/*
+ * SubHeader styles
+ */
+
+:local(.styles){
+	height: 360px;
+	background-image: url(./img/subHeaderBackImage.jpg);
+	position: fixed;
+	top: 0px;
+	h1{
+		font-size: 48px;
+		text-shadow: 2px 2px 2px #333;
+		color: #fff;
+		padding-top: 160px;
+		text-align: center;
+	}
+}

@@ -1,8 +1,10 @@
 // ***************************************************************************
-// Components
+// Puppet Components
 // ***************************************************************************
+
 export { default as Header } from './Header/Header.js';
-export { default as Typography } from './Typography/Typography.js';
-export { default as Items } from './Items/Items.js';
-export { default as SimpleComponent } from './SimpleComponent/SimpleComponent.js';
 export { default as Footer } from './Footer/Footer.js';
+export { default as CoreIdeaMessage } from './CoreIdeaMessage/CoreIdeaMessage';
+export { default as SubHeader } from './SubHeader/SubHeader';
+export { default as LoginBox } from './LoginBox/LoginBox';
+

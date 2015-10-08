@@ -1,0 +1,25 @@
+/*
+ * loginBox styles
+ */
+
+:local(.styles){
+	margin-top:33px;
+	.ant-form-item{
+		padding-bottom: 20px;
+		label{
+			padding-top:6px;
+		}
+	}
+	.ant-form-item:last-child{
+		width: 160px;
+		margin: 26px auto;
+		padding-bottom: 40px;
+		a{
+			margin-left: 30px;
+			color:#d3d3d3;
+		}
+		a:hover{
+			color: #2db7f5;
+		}
+	}
+}

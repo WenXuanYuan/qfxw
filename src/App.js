@@ -9,7 +9,8 @@ import logger from 'redux-logger';
 import { Router, Route } from 'react-router';
 import { history } from 'react-router/lib/HashHistory';
 
-import { Items, SimpleComponent, LoginPanel} from './components/';
+import { Items, SimpleComponent } from './components/';
+import { LoginSection } from './containers';
 
 const reducersApp = combineReducers(reducers);
 const createStoreWithMiddleware = applyMiddleware(logger, thunkMiddleware)(createStore);
@@ -22,6 +23,7 @@ export default class App extends Component {
           {() =>
             <Router history={history}>
               <Route path="/" component={Main}>
+                <Router path='login' component={LoginSection}></Router>
                 <Route path="simple" component={SimpleComponent}></Route>
                 <Route path="items" component={Items}></Route>
               </Route>

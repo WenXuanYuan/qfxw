@@ -1,0 +1,30 @@
+/*
+ * LoginSection styles
+ */
+:local(.styles){
+	overflow: hidden;
+	.header{
+		height: 360px;
+	}
+	.main{
+		background-color: #FFF;
+	}
+	.col-14{
+		background-color: #EFEFEF;
+		padding: 88px 14% 400px;
+		margin-bottom: -360px;
+	}
+	.col-10{
+		padding: 0px 44px;
+		.row-flex{
+			padding: 66px 0px 44px 0px;
+			border-bottom: solid #BFBFBF 1px;
+		}
+	}
+	.footer{
+		background-color: #1b202b;
+		transform: translate3d(0,0,0);
+		color: #d0d1d2;
+		font-size: 12px;
+	}
+}

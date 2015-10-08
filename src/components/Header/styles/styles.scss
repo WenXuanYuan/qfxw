@@ -2,15 +2,22 @@
   Header styles 
 */
 :local(.styles) {
-	background-color: #A6E33C;
-	svg{
-		margin-left: 10px;
-		fill:#FFF;
-		width: 60px;
-		height: 46px;
-	}
-	svg:hover{
-		fill:#EEE;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 1;
+	padding: 15px 1.8%;
+	color: #000;
+	.col-3{
+		margin-top:-15px;
+		svg{
+			fill:rgba(68,69,62,0.6);
+			width: 80px;
+			height: 80px;
+		}
+		svg:hover{
+			fill:#EEE;
+		}
 	}
 	.admin{
 		margin-top: 10px;

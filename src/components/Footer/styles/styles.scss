@@ -2,9 +2,40 @@
   Footer styles 
 */
 :local(.styles) {
-  text-align: center;
-  padding: 10px 20px;
-
-  margin-top: 70px;
-  margin-bottom: 100px;
+	padding: 20px 20px 20px 40px;
+	dt{
+		font-size: 14px;
+		padding-bottom: 20px;
+		display: block;
+		position: relative;
+	}
+	dt:after{
+		content: "";
+	    display: block;
+	    height: 2px;
+	    width: 20px;
+	    background: #d0d1d2;
+	    position: absolute;
+	    bottom: 15px;
+	    left: 0;
+	}
+	dd{
+		a{
+			margin-bottom: 8px;
+			padding: 0 8px;
+		    display: block;
+		    text-decoration: none;
+		    border-left: 1px #d0d1d2 solid;
+		    float: left;
+		    color: #d0d1d2;
+		}
+		a:first-child{
+			border-left: 0;
+			padding-left: 0;
+		}
+	}
+	.col-24>p{
+		margin: 22px 0;
+		font-size: 12px;
+	}
 }
