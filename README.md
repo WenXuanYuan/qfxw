@@ -44,3 +44,12 @@ goodsCategory: {
 		}
 	}}
 }
+
+navigation: [
+	{id:'1',name:'物品管理',child:[
+		{id:'1-1',name:'分类管理',child:[
+			{id:'1-1-1',name:'分类列表',link:'goods/class'},
+			{id:'1-1-2',name:'创建分类',link:'goods/calss/create'},
+		]},
+	]},	
+]
