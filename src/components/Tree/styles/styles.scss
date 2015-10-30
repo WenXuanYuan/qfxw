@@ -1,0 +1,32 @@
+/*
+ * Tree styles
+ */
+:local(.styles){
+	>div{
+		width: 100%;
+		cursor: pointer;
+		>i{
+			margin-right: 4px;
+		}
+		>p{
+			font-size: 12px;
+			display: inline-block;
+		}
+		>span{
+			display: inline-block;
+			float: right;
+			i{
+				display: none;
+				margin: 0 4px;
+			}
+		}
+	}
+	>div:hover{
+		background-color: #F4F4F4;
+		>span{
+			i{
+				display: inline-block;
+			}
+		}
+	}
+}

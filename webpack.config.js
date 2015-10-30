@@ -23,8 +23,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.ProvidePlugin({
-      jQuery: "jquery"
+    new webpack.DefinePlugin({  
+      __DEBUG__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
     })
   ],
 

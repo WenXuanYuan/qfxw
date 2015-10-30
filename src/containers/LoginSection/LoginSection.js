@@ -1,22 +1,56 @@
-import React , { Component } from 'react';
-//config
-import { adminUrl } from '../../config';
+import React , { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import DocumentMeta from 'react-document-meta';
+
 //styles
 import styles from './styles';
+//actions
+import * as actionCreators from 'actions/login'; 
+import { goodsClassPage } from 'constants/RouterConfig';
 //components
-import { Header, SubHeader, CoreIdeaMessage, LoginBox, Footer } from '../../components';
-// import Header from '../Header/Header';
-// import SubHeader from '../SubHeader/SubHeader';
-// import CoreIdeaMessage from '../CoreIdeaMessage/CoreIdeaMessage';
-// import LoginBox from '../LoginBox/LoginBox';
-// import Footer from '../Footer/Footer';
+import { Header, SubHeader, CoreIdeaMessage, Footer } from 'components';
+import { LoginBox } from 'containers';
 
+@connect(state => state.adminInfo)
 export default class LoginSection extends Component {
+
+	static propTypes = {
+		dispatch: PropTypes.func,
+ 	}
+
+	constructor(props) {
+		super(props);
+		this.actions = bindActionCreators(actionCreators, this.props.dispatch);
+	}
+
+	componentWillMount(){
+    // Dev: judge the state of administor
+    if (this.props.adminInfo.name != '') {
+    	window.location.href = goodsClassPage;
+    };
+	}
+	
 	render(){
+
+		const { adminInfo } = this.props;
+    const metaData = {
+      title: '清风后台登录',
+      description: '清风管理员登录界面',
+      canonical: 'http://example.com/path/to/page',
+      meta: {
+        charset: 'utf-8',
+        name: {
+          keywords: '',
+        },
+      },
+    };
+
 		return (
 			<section className={`${styles}`}>
+				<DocumentMeta {...metaData} />
 				<div className='row header'>
-					<Header />
+					<Header adminName={adminInfo.name}/>
 				</div>
 				<SubHeader />
 				<div className='row main'>

@@ -1,0 +1,58 @@
+/*
+ * MainFrame styles
+ */
+:local(.styles){
+	.headerBox{
+		width: 100%;
+		height: 40px;
+	}
+	.navBarBox{
+		width: 100%;
+		height: 34px;
+		z-index: 2;
+	}
+	.TabNavBox{
+		margin-left: -1px;
+	}
+	.leftBarClose{
+		position: relative;
+		width: 0.6%;
+		background-color: #F4F4F4;
+		display: inline-block;
+	}
+	.mainBoxMaxWidth{
+		width: 99.4%;
+		display: inline-block;
+	}
+	.leftBarBox{
+		overflow: scroll;
+	}
+	.leftBarSwitch{
+		width: 14px;
+    height: 66px;
+    position: fixed;
+    top: 160px;
+    border: solid 2px #E6E6E6;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    color: #E6E6E6;
+    cursor: pointer;
+    padding-top: 22px;
+    z-index: 1;
+	}
+	.leftBarSwitchOpenLeft{
+    left: 16.66666667%;
+	}
+	.leftBarSwitchCloseLeft{
+		left:0.6%;
+	}
+	.leftBarSwitch:hover{
+		color: #333;
+		border: solid 2px #999;
+		border-left: none;
+	}
+	.contentBox{
+		width: 100%;
+		overflow: scroll;
+	}
+}

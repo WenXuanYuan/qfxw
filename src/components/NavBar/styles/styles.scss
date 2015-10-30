@@ -1,0 +1,29 @@
+/*
+ * NavBar styles
+ */
+:local(.styles){
+	background-color: #D0EE9C;
+	height: 34px;
+	li{
+		width: 126px;
+		height: 30px;
+		display: inline-block;
+		text-align: center;
+		margin: 4px 4px 0px;
+		padding-top: 4px;
+		font-size: 14px;
+		cursor: pointer;
+		i{
+			vertical-align: middle;
+			padding-top: 2px;
+			margin-right: 3px; 
+		}
+		span{
+			vertical-align: middle;
+			margin-left: 3px;
+		}
+	}
+	li:hover{
+		background-color: #F4F4F4
+	}
+}

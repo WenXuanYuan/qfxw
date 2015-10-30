@@ -1,0 +1,12 @@
+/*
+ * goods class list styles
+ */
+:local(.styles){
+	padding: 10px 4%;
+	.col-7{
+		border: solid 1px #E6E6E6;
+		border-radius: 16px;
+		padding: 22px 10px 22px 10px;
+		overflow: scroll;
+	}
+}

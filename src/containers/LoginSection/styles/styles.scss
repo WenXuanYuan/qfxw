@@ -8,17 +8,17 @@
 	}
 	.main{
 		background-color: #FFF;
-	}
-	.col-14{
-		background-color: #EFEFEF;
-		padding: 88px 14% 400px;
-		margin-bottom: -360px;
-	}
-	.col-10{
-		padding: 0px 44px;
-		.row-flex{
-			padding: 66px 0px 44px 0px;
-			border-bottom: solid #BFBFBF 1px;
+		>.col-14{
+			background-color: #EFEFEF;
+			padding: 88px 14% 400px;
+			margin-bottom: -360px;
+		}
+		>.col-10{
+			padding: 0px 44px;
+			.row-flex{
+				padding: 66px 0px 44px 0px;
+				border-bottom: solid #BFBFBF 1px;
+			}
 		}
 	}
 	.footer{

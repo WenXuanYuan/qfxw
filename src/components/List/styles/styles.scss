@@ -1,0 +1,29 @@
+/*
+ * List styles
+ */
+:local(.styles){
+	>ul{
+		>li{
+			cursor: pointer;
+			padding: 2px 10px;
+			>p{
+				display: inline-block;
+				font-size: 12px;
+			}
+			i{
+				display: none;
+				float: right;
+				margin-left: 6px;
+			}
+			i:hover{
+				color: #FFF;
+			}
+		}
+		>li:hover{
+			background-color: #F4F4F4;
+			i{
+				display: inline-block;
+			}
+		}
+	}
+}
